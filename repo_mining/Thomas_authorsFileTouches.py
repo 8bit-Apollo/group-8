@@ -21,10 +21,17 @@ def github_auth(url, lsttoken, ct):
         print(e)
     return jsonData, ct
 
-# @dictFiles, empty dictionary of files
+# @authorAndDates, empty dictionary of files, authors and dates
 # @lstTokens, GitHub authentication tokens
 # @repo, GitHub repo
-def countfiles(dictfiles, lsttokens, repo):
+
+# List of source file extensions 
+# based on the languages on the bottom right of Github repo scottyab/rootbeer
+# and some source files seen in the CollectFiles.pt such as .h and .sh
+# .h is for C/C++ header files
+SOURCE_FILE_EXTENSIONS = ('.java', '.kt', '.kts', '.cpp', '.c', '.h', '.sh')
+
+def collectAuthorAndDates(authorAndDates, lsttokens, repo):
     ipage = 1  # url page counter
     ct = 0  # token counter
 
@@ -45,38 +52,28 @@ def countfiles(dictfiles, lsttokens, repo):
                 shaUrl = 'https://api.github.com/repos/' + repo + '/commits/' + sha
                 shaDetails, ct = github_auth(shaUrl, lsttokens, ct)
                 filesjson = shaDetails['files']
+
+                # Collect the author and date information for each commit
+                author = shaDetails['commit']['author']['name']
+                date = shaDetails['commit']['author']['date']
+
                 for filenameObj in filesjson:
                     filename = filenameObj['filename']
-
-                    # check file type
-                    if SOURCE_FILES_ONLY:
-                        if filename.endswith(SOURCE_FILE_EXT):
-                            dictfiles[filename] = dictfiles.get(filename, 0) + 1
-                            print(filename)
-                        elif filename.endswith(CONFIG_FILE_EXT):
-                            print(f"Skipping configuration file: {filename}")
-                        else:
-                            print(f"Skipping unknown file type: {filename}")
-                    else:
-                        dictfiles[filename] = dictfiles.get(filename, 0) + 1
+                    # only collect source files by checking their file extension
+                    if (filename.endswith(SOURCE_FILE_EXTENSIONS)): 
+                        # append the source file's author, date
+                        authorAndDates.append([filename, author, date.split('T')[0]])
                         print(filename)
             ipage += 1
     except:
         print("Error receiving data")
         exit(0)
-
-# control flag
-SOURCE_FILES_ONLY = True
-
 # GitHub repo
 repo = 'scottyab/rootbeer'
 # repo = 'Skyscanner/backpack' # This repo is commit heavy. It takes long to finish executing
 # repo = 'k9mail/k-9' # This repo is commit heavy. It takes long to finish executing
 # repo = 'mendhak/gpslogger'
 
-# differentiate between source and config files using file extensions
-CONFIG_FILE_EXT = (".xml", ".json", ".yaml", ".gradle", ".properties", ".mk", ".pro", ".iml")
-SOURCE_FILE_EXT = (".java", ".py", ".kt", ".kts", ".c", ".cpp", ".h", ".sh")
 
 # put your tokens here
 # Remember to empty the list when going to commit to GitHub.
@@ -84,25 +81,19 @@ SOURCE_FILE_EXT = (".java", ".py", ".kt", ".kts", ".c", ".cpp", ".h", ".sh")
 # I would advise to create more than one token for repos with heavy commits
 lstTokens = []
 
-dictfiles = dict()
-countfiles(dictfiles, lstTokens, repo)
-print('Total number of files: ' + str(len(dictfiles)))
+authorAndDates = []
+collectAuthorAndDates(authorAndDates, lstTokens, repo)
+print('Total number of files: ' + str(len(authorAndDates)))
 
 file = repo.split('/')[1]
 # change this to the path of your file
-fileOutput = 'data/file_' + file + '.csv'
-rows = ["Filename", "Touches"]
+fileOutput = 'data/authorsAndDates_' + file + '.csv'
+rows = ["File", "Author", "Date"]
 fileCSV = open(fileOutput, 'w')
 writer = csv.writer(fileCSV)
 writer.writerow(rows)
 
-bigcount = None
-bigfilename = None
-for filename, count in dictfiles.items():
-    rows = [filename, count]
+for filename, author, date in authorAndDates:
+    rows = [filename, author, date]
     writer.writerow(rows)
-    if bigcount is None or count > bigcount:
-        bigcount = count
-        bigfilename = filename
 fileCSV.close()
-print('The file ' + bigfilename + ' has been touched ' + str(bigcount) + ' times.')

@@ -4,12 +4,8 @@ import csv
 
 import os
 
-'''
-zachary-sin_CollectFiles: find all unique files (or source files) and count the number of times it was touched
-zachary-sin_authorsFileTouches: find all unique files (or source files) and track the author and date for each touch on that file
-'''
 if not os.path.exists("data"):
-    os.makedirs("data")
+ os.makedirs("data")
 
 # GitHub Authentication function
 def github_auth(url, lsttoken, ct):
@@ -28,7 +24,14 @@ def github_auth(url, lsttoken, ct):
 # @dictFiles, empty dictionary of files
 # @lstTokens, GitHub authentication tokens
 # @repo, GitHub repo
-def countfiles(authorFileTouches, lsttokens, repo):
+
+# List of source file extensions 
+# based on the languages on the bottom right of Github repo scottyab/rootbeer
+# and some source files seen in the CollectFiles.pt such as .h and .sh
+# .h is for C/C++ header files
+SOURCE_FILE_EXT = ('.java', '.kt', '.kts', '.cpp', '.c', '.h', '.sh')
+
+def countfiles(dictfiles, lsttokens, repo):
     ipage = 1  # url page counter
     ct = 0  # token counter
 
@@ -42,52 +45,29 @@ def countfiles(authorFileTouches, lsttokens, repo):
             # break out of the while loop if there are no more commits in the pages
             if len(jsonCommits) == 0:
                 break
-
             # iterate through the list of commits in  spage
             for shaObject in jsonCommits:
                 sha = shaObject['sha']
-
-                # Get primary author and date information for the commit
-                author = shaObject['commit']['author']['name']
-                date = shaObject['commit']['author']['date']
-
                 # For each commit, use the GitHub commit API to extract the files touched by the commit
                 shaUrl = 'https://api.github.com/repos/' + repo + '/commits/' + sha
                 shaDetails, ct = github_auth(shaUrl, lsttokens, ct)
                 filesjson = shaDetails['files']
-
                 for filenameObj in filesjson:
                     filename = filenameObj['filename']
-
-                    # check file type
-                    if SOURCE_FILES_ONLY:
-                        if filename.endswith(SOURCE_FILE_EXT):
-                            authorFileTouches.append([filename, author, date])
-                            print(f"Source file touch: {filename}\t{author}\t{date}")
-                        elif filename.endswith(CONFIG_FILE_EXT):
-                            print(f"Skipping touch on configuration file: {filename}")
-                        else:
-                            print(f"Skipping touch on other file: {filename}")
-                    else:
-                        authorFileTouches.append([filename, author, date])
-                        print(f"File touch: {filename}\t{author}\t{date}")
+                    # only collect source files by checking their file extension
+                    if (filename.endswith(SOURCE_FILE_EXT)): 
+                        dictfiles[filename] = dictfiles.get(filename, 0) + 1
+                        print(filename)
             ipage += 1
     except:
         print("Error receiving data")
         exit(0)
-
-# control flag
-SOURCE_FILES_ONLY = True
-
 # GitHub repo
 repo = 'scottyab/rootbeer'
 # repo = 'Skyscanner/backpack' # This repo is commit heavy. It takes long to finish executing
 # repo = 'k9mail/k-9' # This repo is commit heavy. It takes long to finish executing
 # repo = 'mendhak/gpslogger'
 
-# differentiate between source and config files using file extensions
-CONFIG_FILE_EXT = (".xml", ".json", ".yaml", ".gradle", ".properties", ".mk", ".pro", ".iml")
-SOURCE_FILE_EXT = (".java", ".py", ".kt", ".kts", ".c", ".cpp", ".h", ".sh")
 
 # put your tokens here
 # Remember to empty the list when going to commit to GitHub.
@@ -95,22 +75,25 @@ SOURCE_FILE_EXT = (".java", ".py", ".kt", ".kts", ".c", ".cpp", ".h", ".sh")
 # I would advise to create more than one token for repos with heavy commits
 lstTokens = []
 
-authorFileTouches = []
-countfiles(authorFileTouches, lstTokens, repo)
-print('Total number of file touches: ' + str(len(authorFileTouches)))
+dictfiles = dict()
+countfiles(dictfiles, lstTokens, repo)
+print('Total number of files: ' + str(len(dictfiles)))
 
 file = repo.split('/')[1]
 # change this to the path of your file
 fileOutput = 'data/file_' + file + '.csv'
+rows = ["Filename", "Touches"]
+fileCSV = open(fileOutput, 'w')
+writer = csv.writer(fileCSV)
+writer.writerow(rows)
 
-with open(fileOutput, 'w', newline='', encoding='utf-8') as fileCSV:
-    writer = csv.writer(fileCSV)
-
-    # col  names
-    writer.writerow(["filename", "author", "date"])
-
-    # all rows
-    writer.writerows(authorFileTouches)
-
-print(f"File written to: {fileOutput}")
-print(f"Total author file touches: {len(authorFileTouches)}")
+bigcount = None
+bigfilename = None
+for filename, count in dictfiles.items():
+    rows = [filename, count]
+    writer.writerow(rows)
+    if bigcount is None or count > bigcount:
+        bigcount = count
+        bigfilename = filename
+fileCSV.close()
+print('The file ' + bigfilename + ' has been touched ' + str(bigcount) + ' times.')
