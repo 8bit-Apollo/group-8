@@ -109,6 +109,22 @@ Each test should include:
 # - Check that invalid emails (e.g., "not-an-email") raise a validation error.
 # - Ensure accounts without an email cannot be created.
 
+# TODO Test deleting an account
+# ===========================
+# Test: Delete Account
+# Author: Angel V
+# Date: 2026-02-08
+# Description: Ensure an account can be deleted from the database.
+# ===========================
+
+def test_delete_account(setup_account):
+    account = setup_account
+    account_id = account.id
+
+    account.delete()                        # deleting the account
+    deleted_account = Account.query.get(account_id)
+    assert deleted_account is None
+
 # TODO 5: Test Password Hashing
 # - Ensure that passwords are stored as **hashed values**.
 # - Verify that plaintext passwords are never stored in the database.
