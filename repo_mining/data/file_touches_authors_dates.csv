@@ -1,0 +1,217 @@
+Filename,CommitSHA,AuthorLogin,AuthorName,AuthorEmail,CommitDate
+app/build.gradle.kts,eff976a9eec1706957b2fa594672105fa9c3fa1e,NiallScott,Niall Scott,riverniall@gmail.com,2024-10-04T07:42:57Z
+app/build.gradle.kts,8e8bc3c6a4494da20259b86f4e3c45ca8131241a,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-18T10:02:36Z
+app/build.gradle.kts,52470e427026fda0b134e7680d8301636682deee,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-12T10:16:21Z
+app/build.gradle.kts,e14e07404b8179f3b21622487665daa8bf4d5c64,ArtsemKurantsou,Artsem Kurantsou,artsemkurantsou@gmail.com,2024-08-17T14:34:47Z
+app/build.gradle.kts,3e41e6aefabf3ab3454fee2daf3495eef28d4bc9,ArtsemKurantsou,Artsem Kurantsou,artsemkurantsou@gmail.com,2024-08-05T18:31:03Z
+app/build.gradle.kts,6428bc8b8e6e667ae722141ae4cb1e097adaeceb,ArtsemKurantsou,Artsem Kurantsou,artsemkurantsou@gmail.com,2024-08-04T21:18:36Z
+build.gradle.kts,eff976a9eec1706957b2fa594672105fa9c3fa1e,NiallScott,Niall Scott,riverniall@gmail.com,2024-10-04T07:42:57Z
+build.gradle.kts,e14e07404b8179f3b21622487665daa8bf4d5c64,ArtsemKurantsou,Artsem Kurantsou,artsemkurantsou@gmail.com,2024-08-17T14:34:47Z
+build.gradle.kts,6428bc8b8e6e667ae722141ae4cb1e097adaeceb,ArtsemKurantsou,Artsem Kurantsou,artsemkurantsou@gmail.com,2024-08-04T21:18:36Z
+rootbeerlib/build.gradle.kts,eff976a9eec1706957b2fa594672105fa9c3fa1e,NiallScott,Niall Scott,riverniall@gmail.com,2024-10-04T07:42:57Z
+rootbeerlib/build.gradle.kts,8e8bc3c6a4494da20259b86f4e3c45ca8131241a,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-18T10:02:36Z
+rootbeerlib/build.gradle.kts,52470e427026fda0b134e7680d8301636682deee,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-12T10:16:21Z
+rootbeerlib/build.gradle.kts,11ba09700227aab073b39ecb96b8b1aedbd2f39f,ArtsemKurantsou,Artsem Kurantsou,artsemkurantsou@gmail.com,2024-08-05T19:48:03Z
+rootbeerlib/build.gradle.kts,34a6b47d6e3ea308e84122ab586ca9db007040e5,ArtsemKurantsou,Artsem Kurantsou,artsemkurantsou@gmail.com,2024-08-05T19:38:36Z
+rootbeerlib/build.gradle.kts,6428bc8b8e6e667ae722141ae4cb1e097adaeceb,ArtsemKurantsou,Artsem Kurantsou,artsemkurantsou@gmail.com,2024-08-04T21:18:36Z
+settings.gradle.kts,eff976a9eec1706957b2fa594672105fa9c3fa1e,NiallScott,Niall Scott,riverniall@gmail.com,2024-10-04T07:42:57Z
+settings.gradle.kts,8e8bc3c6a4494da20259b86f4e3c45ca8131241a,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-18T10:02:36Z
+settings.gradle.kts,3e41e6aefabf3ab3454fee2daf3495eef28d4bc9,ArtsemKurantsou,Artsem Kurantsou,artsemkurantsou@gmail.com,2024-08-05T18:31:03Z
+settings.gradle.kts,6428bc8b8e6e667ae722141ae4cb1e097adaeceb,ArtsemKurantsou,Artsem Kurantsou,artsemkurantsou@gmail.com,2024-08-04T21:18:36Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckForRootWorker.kt,52470e427026fda0b134e7680d8301636682deee,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-12T10:16:21Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckForRootWorker.kt,091a157959a2de58abc4b51b99fb9189ecd284e2,,grubeli,grubeli@mego.bar,2021-11-16T14:04:57Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckForRootWorker.kt,d9057ce490c3481bc9be852e343678c93860e6a8,scottyab,Scott Alexander-Bown,scottyab@users.noreply.github.com,2021-05-24T07:46:20Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckForRootWorker.kt,c0840f172dfe0ec292f49b0a49baeba2dc26b8ed,scottyab,Scott Alexander-Bown,scottyab@users.noreply.github.com,2021-05-24T07:45:07Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckForRootWorker.kt,88dbbd2328a28541740b00bff818b5fcba21da40,scottyab,Scott Alexander-Bown,scottyab@users.noreply.github.com,2021-05-21T14:40:38Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckForRootWorker.kt,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.kt,52470e427026fda0b134e7680d8301636682deee,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-12T10:16:21Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.kt,3e41e6aefabf3ab3454fee2daf3495eef28d4bc9,ArtsemKurantsou,Artsem Kurantsou,artsemkurantsou@gmail.com,2024-08-05T18:31:03Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.kt,4423a92931a31cd0b64c3872814b47a79c0fefc3,ArtsemKurantsou,Artsem Kurantsou,artsemkurantsou@gmail.com,2024-08-04T19:40:34Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.kt,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+app/src/main/java/com/scottyab/rootbeer/sample/RootItemResult.kt,52470e427026fda0b134e7680d8301636682deee,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-12T10:16:21Z
+app/src/main/java/com/scottyab/rootbeer/sample/RootItemResult.kt,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+app/src/main/java/com/scottyab/rootbeer/sample/RootSampleApp.kt,52470e427026fda0b134e7680d8301636682deee,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-12T10:16:21Z
+app/src/main/java/com/scottyab/rootbeer/sample/RootSampleApp.kt,4423a92931a31cd0b64c3872814b47a79c0fefc3,ArtsemKurantsou,Artsem Kurantsou,artsemkurantsou@gmail.com,2024-08-04T19:40:34Z
+app/src/main/java/com/scottyab/rootbeer/sample/RootSampleApp.kt,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+app/src/main/java/com/scottyab/rootbeer/sample/extensions/ViewExtensions.kt,52470e427026fda0b134e7680d8301636682deee,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-12T10:16:21Z
+app/src/main/java/com/scottyab/rootbeer/sample/extensions/ViewExtensions.kt,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+app/src/main/java/com/scottyab/rootbeer/sample/ui/ResultIconView.kt,52470e427026fda0b134e7680d8301636682deee,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-12T10:16:21Z
+app/src/main/java/com/scottyab/rootbeer/sample/ui/ResultIconView.kt,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+app/src/main/java/com/scottyab/rootbeer/sample/ui/RootItemAdapter.kt,52470e427026fda0b134e7680d8301636682deee,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-12T10:16:21Z
+app/src/main/java/com/scottyab/rootbeer/sample/ui/RootItemAdapter.kt,4423a92931a31cd0b64c3872814b47a79c0fefc3,ArtsemKurantsou,Artsem Kurantsou,artsemkurantsou@gmail.com,2024-08-04T19:40:34Z
+app/src/main/java/com/scottyab/rootbeer/sample/ui/RootItemAdapter.kt,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+app/src/main/java/com/scottyab/rootbeer/sample/ui/RootedResultTextView.kt,52470e427026fda0b134e7680d8301636682deee,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-12T10:16:21Z
+app/src/main/java/com/scottyab/rootbeer/sample/ui/RootedResultTextView.kt,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+app/src/main/java/com/scottyab/rootbeer/sample/ui/ScopedActivity.kt,52470e427026fda0b134e7680d8301636682deee,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-12T10:16:21Z
+app/src/main/java/com/scottyab/rootbeer/sample/ui/ScopedActivity.kt,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+rootbeerlib/src/main/cpp/CMakeLists.txt,52470e427026fda0b134e7680d8301636682deee,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-12T10:16:21Z
+rootbeerlib/src/main/cpp/CMakeLists.txt,2fae04b08146f14f688f85bbe6113ee340a3c337,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-22T13:42:21Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/util/Utils.java,52470e427026fda0b134e7680d8301636682deee,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2024-09-12T10:16:21Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/util/Utils.java,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/util/Utils.java,8b985d927ff18acc804440a84c6d2b5efee0c6d9,stealthcopter,Matthew Rollings,1211162+stealthcopter@users.noreply.github.com,2019-03-14T12:24:58Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/util/Utils.java,bb880410733bca57af216d56f2e2c8aec4626907,,Mohammed Ezzat,mohamed.ezzat@devfactory.com,2016-03-15T13:13:43Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/util/Utils.java,4926749156fbd8e1d48ec713aaf1269e84e8b6b5,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-30T14:14:08Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeerNative.java,4adecf81fb4bddd831f6c12cf7dcec80b012a6c5,stealthcopter,Matthew Rollings,1211162+stealthcopter@users.noreply.github.com,2021-05-24T07:35:11Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeerNative.java,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeerNative.java,8b985d927ff18acc804440a84c6d2b5efee0c6d9,stealthcopter,Matthew Rollings,1211162+stealthcopter@users.noreply.github.com,2019-03-14T12:24:58Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeerNative.java,1d91999332432d5bb85facfb184fa5b525a8667c,stealthcopter,Matthew Rollings,admin@stealthcopter.com,2017-03-29T11:18:37Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeerNative.java,2920f344669151ddcc7ef624d1c1ecc0ad878ba5,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-30T14:36:54Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeerNative.java,e9511c315e1ea80769b734483a5e64e133c5a2ee,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-30T14:14:02Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeerNative.java,13187afc81827b88c2996dd900a45ccb0eef6132,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-26T15:57:05Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeerNative.java,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+rootbeerlib/src/main/cpp/toolChecker.cpp,2fae04b08146f14f688f85bbe6113ee340a3c337,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-22T13:42:21Z
+rootbeerlib/src/main/cpp/toolChecker.h,2fae04b08146f14f688f85bbe6113ee340a3c337,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-22T13:42:21Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckRootTask.java,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckRootTask.java,1ea425289fbd480147be2e584def97b2f89497ad,danielkutik,Daniel Kutik,daniel@kutik.eu,2019-11-16T02:39:54Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckRootTask.java,8b985d927ff18acc804440a84c6d2b5efee0c6d9,stealthcopter,Matthew Rollings,1211162+stealthcopter@users.noreply.github.com,2019-03-14T12:24:58Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckRootTask.java,bfba45649d5b94d4843443dcbddaab40c88132e6,p2paltvnv,altvnv,alex.o.litvinov@gmail.com,2018-03-16T16:42:19Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckRootTask.java,1d91999332432d5bb85facfb184fa5b525a8667c,stealthcopter,Matthew Rollings,admin@stealthcopter.com,2017-03-29T11:18:37Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckRootTask.java,55a4c8f28bf53e479a485fb9ba44279144f6526e,stealthcopter,Matthew Rollings,admin@stealthcopter.com,2017-02-15T12:53:36Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckRootTask.java,4a2529a807bf4de31211e622a102410eb9bd995b,scottyab,Scott Alexander-Bown,dev@scottyab.com,2016-07-01T20:13:06Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckRootTask.java,8fe8cf3c9e76b7eaabc3d7732ab04ab2dc8e8c1c,scottyab,Scott Alexander-Bown,dev@scottyab.com,2016-07-01T14:25:44Z
+app/src/main/java/com/scottyab/rootbeer/sample/CheckRootTask.java,8970ccf943e064e6fedd929279f0d804b43e6ff2,andyb129,Andy Barber,andyb@barbuzz.co.uk,2016-07-01T14:40:45Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.java,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.java,94e8c24b687b69b04c1910c22aa224f8e7fd5f3d,danielkutik,Daniel Kutik,daniel@kutik.eu,2019-11-16T02:34:24Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.java,e8c54eca9e643d6ec93064ed4a15254a14685981,stealthcopter,Matthew Rollings,admin@stealthcopter.com,2017-03-24T13:41:16Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.java,8156ec0fa01ec4a37760f0f49f9aa0497232827a,scottyab,Scott Alexander-Bown,dev@scottyab.com,2016-07-01T20:13:52Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.java,8970ccf943e064e6fedd929279f0d804b43e6ff2,andyb129,Andy Barber,andyb@barbuzz.co.uk,2016-07-01T14:40:45Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.java,9709a8dbb7607a976334d0433687dc1ddaa56de5,,Mohammed Ezzat,mohamed.ezzat@devfactory.com,2016-03-16T14:14:44Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.java,7d5eb66fd85ca9c7fcbf8275e9bff713271352b7,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-09-16T12:14:10Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.java,9bb704339eddab021e2c54e1df2aea72a8950ebb,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-30T14:45:12Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.java,4926749156fbd8e1d48ec713aaf1269e84e8b6b5,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-30T14:14:08Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.java,57a0ccf5794e9890e1c438ab1f424401c046341d,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-29T13:06:14Z
+app/src/main/java/com/scottyab/rootbeer/sample/MainActivity.java,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+app/src/main/java/com/scottyab/rootbeer/sample/TextViewFont.java,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+app/src/main/java/com/scottyab/rootbeer/sample/TextViewFont.java,1ea425289fbd480147be2e584def97b2f89497ad,danielkutik,Daniel Kutik,daniel@kutik.eu,2019-11-16T02:39:54Z
+app/src/main/java/com/scottyab/rootbeer/sample/TextViewFont.java,94e8c24b687b69b04c1910c22aa224f8e7fd5f3d,danielkutik,Daniel Kutik,daniel@kutik.eu,2019-11-16T02:34:24Z
+app/src/main/java/com/scottyab/rootbeer/sample/TextViewFont.java,4d3da918778eabdf01fd0fbebefcb04edc4aca32,friederbluemle,Frieder Bluemle,frieder.bluemle@gmail.com,2017-05-11T16:55:33Z
+app/src/main/java/com/scottyab/rootbeer/sample/TextViewFont.java,8970ccf943e064e6fedd929279f0d804b43e6ff2,andyb129,Andy Barber,andyb@barbuzz.co.uk,2016-07-01T14:40:45Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,b71502a78055e12227f83359cda7d51874e312de,Fi5t,Fi5t,Fi5t@users.noreply.github.com,2020-07-15T20:47:49Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,4dc3b789a6ef07fe1e50352739f9a41d0df750e1,,mat,matthewrollings@pm.me,2020-01-30T13:09:02Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,d1b40829bf88d238dc0f83214c4208c7eef407ad,,mat,matthewrollings@pm.me,2020-01-28T14:06:12Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,59c387ef07075c5919f95569cbcd513c8a8f7c4a,BlizzedRu,Ivan Vlasov,Blizzed@bk.ru,2019-12-09T10:32:18Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,8b985d927ff18acc804440a84c6d2b5efee0c6d9,stealthcopter,Matthew Rollings,1211162+stealthcopter@users.noreply.github.com,2019-03-14T12:24:58Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,bfba45649d5b94d4843443dcbddaab40c88132e6,p2paltvnv,altvnv,alex.o.litvinov@gmail.com,2018-03-16T16:42:19Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,6b0362df982ca091d8ddb19d6055e5427868bb09,p2paltvnv,altvnv,alex.o.litvinov@gmail.com,2018-03-16T12:02:21Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,6ff8b25974c991ab55948fbe0664ab423f3a0c7b,p2paltvnv,altvnv,alex.o.litvinov@gmail.com,2018-03-16T11:36:53Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,22c503f888ca7c1fea110f310593b2e60d333797,stealthcopter,Matthew Rollings,admin@stealthcopter.com,2017-03-24T13:30:47Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,bb880410733bca57af216d56f2e2c8aec4626907,,Mohammed Ezzat,mohamed.ezzat@devfactory.com,2016-03-15T13:13:43Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,3cb4504b4013738a03485e1f8541c0b17eab102c,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-09-16T12:13:36Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,e1741cf2dcd0653649df59001601e41180062c2e,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-30T14:59:48Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,13ad8c722a871ebeaf6f0da5b3d8067b4be94d64,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-30T13:40:46Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,ec2427eb932e87ee0397d7a471997eb2fbb0b9fd,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-29T13:06:59Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/Const.java,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+rootbeerlib/src/test/java/com/scottyab/rootbeer/RootBeerTest.java,3163211e242e6310117c5c92dfe4f0c6c7cc18b2,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-08T14:18:37Z
+rootbeerlib/src/test/java/com/scottyab/rootbeer/RootBeerTest.java,7815ef83b8b88b1ef1fab3ea30f4c8d7712dff19,stealthcopter,Matthew Rollings,1211162+stealthcopter@users.noreply.github.com,2020-02-03T20:42:40Z
+rootbeerlib/src/test/java/com/scottyab/rootbeer/RootBeerTest.java,a00e3f7b65dfb8b9de43c2f265dccdee989bd790,danielkutik,Daniel Kutik,daniel@kutik.eu,2020-01-31T00:54:28Z
+rootbeerlib/src/test/java/com/scottyab/rootbeer/RootBeerTest.java,94b0dddab9f3fd26ce77f09db64598566eb863c3,,mat,matthewrollings@pm.me,2020-01-30T16:12:36Z
+rootbeerlib/src/test/java/com/scottyab/rootbeer/RootBeerTest.java,b8986907f154b243184862a3766a4c6c7b3a4271,,mat,matthewrollings@pm.me,2020-01-28T13:03:18Z
+rootbeerlib/src/test/java/com/scottyab/rootbeer/RootBeerTest.java,94e8c24b687b69b04c1910c22aa224f8e7fd5f3d,danielkutik,Daniel Kutik,daniel@kutik.eu,2019-11-16T02:34:24Z
+rootbeerlib/src/test/java/com/scottyab/rootbeer/RootBeerTest.java,8b985d927ff18acc804440a84c6d2b5efee0c6d9,stealthcopter,Matthew Rollings,1211162+stealthcopter@users.noreply.github.com,2019-03-14T12:24:58Z
+rootbeerlib/src/test/java/com/scottyab/rootbeer/RootBeerTest.java,e820055a226cd2c5cdb427b80f264bb9b1384ccf,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2018-05-11T13:16:33Z
+rootbeerlib/src/test/java/com/scottyab/rootbeer/RootBeerTest.java,279ab654aeadad80119abf615076b22eb07f2029,stealthcopter,matthew,matthewrollings@gmail.com,2017-10-31T18:57:32Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,f9ec6c9ab1e6ee1ff1274f6bfe3aa1ba7f4f68f1,namouchislim,Slim Namouchi,namouchi.slim@gmail.com,2020-07-21T13:19:44Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,bb43b749ed81657ee8a2bdcfe0770e4499966a36,stealthcopter,Matthew Rollings,1211162+stealthcopter@users.noreply.github.com,2020-07-21T13:10:44Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,89cd69abb034c007a4ee8e3be7baae7f7b5de37e,,mat,matthewrollings@pm.me,2020-02-07T09:43:09Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,53b32c3371fb5cdcf2f1dba3620cfc4fa95b0ffc,stealthcopter,Matthew Rollings,1211162+stealthcopter@users.noreply.github.com,2020-01-30T13:05:20Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,d1b40829bf88d238dc0f83214c4208c7eef407ad,,mat,matthewrollings@pm.me,2020-01-28T14:06:12Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,b8986907f154b243184862a3766a4c6c7b3a4271,,mat,matthewrollings@pm.me,2020-01-28T13:03:18Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,0ff04d397ee8f7d336dcc29c5717d996552f5f2c,,mat,matthewrollings@pm.me,2020-01-28T12:41:49Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,59c387ef07075c5919f95569cbcd513c8a8f7c4a,BlizzedRu,Ivan Vlasov,Blizzed@bk.ru,2019-12-09T10:32:18Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,8b985d927ff18acc804440a84c6d2b5efee0c6d9,stealthcopter,Matthew Rollings,1211162+stealthcopter@users.noreply.github.com,2019-03-14T12:24:58Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,eff3329618c9b0ad1b7f782383be323183dc665a,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2018-05-11T12:00:38Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,77919fc8cb4683bc218af4d068cb68d1267d8461,stealthcopter,Matthew Rollings,admin@stealthcopter.com,2018-05-11T11:04:28Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,8019212fccc48c618f7dd335ee909e9717cd7385,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2018-05-11T10:59:44Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,d3a3cf91bc4f60da7a07336b9ea33e9ae25fa9a6,p2paltvnv,altvnv,alex.o.litvinov@gmail.com,2018-03-16T16:49:07Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,bfba45649d5b94d4843443dcbddaab40c88132e6,p2paltvnv,altvnv,alex.o.litvinov@gmail.com,2018-03-16T16:42:19Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,1853c45fc9d72160eb855613a2c906f1186e8a7f,p2paltvnv,altvnv,alex.o.litvinov@gmail.com,2018-03-16T12:14:23Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,476f81fd38954a9452886c1dc6401db688aaf871,stealthcopter,Matthew Rollings,admin@stealthcopter.com,2017-09-29T08:23:05Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,0f9c169454010de9080427d645f491867856e376,friederbluemle,Frieder Bluemle,frieder.bluemle@gmail.com,2017-08-19T16:20:33Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,4151dc37a82a28da94ee4bfed5fb679820d7233a,awaseem,Ali Waseem,waseema393@gmail.com,2017-08-11T15:34:54Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,65c7647ffbbe013c11e5862b7ab52307ca6d5dfe,,BIOCATCH\Leon.Karabchevsky,leon.karabchevsky@biocatch.com,2017-06-07T07:53:52Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,68943207c5de1bea38b46b073fce9af595a3c6cd,vyas-n,vyas,vyasnellutla@gmail.com,2017-05-10T19:44:29Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,1d91999332432d5bb85facfb184fa5b525a8667c,stealthcopter,Matthew Rollings,admin@stealthcopter.com,2017-03-29T11:18:37Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,91e0a1137bb78c1e33e209ca0cd3f8946f8682fe,stealthcopter,Matthew Rollings,admin@stealthcopter.com,2017-03-24T16:11:58Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,51151efbd9a53a88a01425f02bc46f55156cbda2,stealthcopter,Matthew Rollings,admin@stealthcopter.com,2017-03-24T13:31:19Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,82fb875698341f468a5a067cc533a3479b35baf4,stealthcopter,Matthew Rollings,admin@stealthcopter.com,2017-03-13T22:05:11Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,55a4c8f28bf53e479a485fb9ba44279144f6526e,stealthcopter,Matthew Rollings,admin@stealthcopter.com,2017-02-15T12:53:36Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,4b04449da08a200e04cc5d0d341ffc06f8e251ab,leocadiotine,leocadiotine,leocadiotine@gmail.com,2016-09-14T21:25:21Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,ed600d02aa5bd2dfc91c3df1987eaf35be5f2a85,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2016-04-18T16:36:03Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,bb880410733bca57af216d56f2e2c8aec4626907,,Mohammed Ezzat,mohamed.ezzat@devfactory.com,2016-03-15T13:13:43Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,74f3a20e365567dfe881d83fae6ec354cabc9c9b,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-12-22T10:17:02Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,f159dd1b19a022ff8e07848b56fd49582cb6cf7d,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-12-22T10:11:09Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,08f3cdd79168aafeeadff5b14bc329f140af2bf8,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-12-21T20:44:58Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,322560d3be1bb8cfe27d1b66175813f6f21b46bb,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-12-21T20:43:55Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,8cb5e85b11a596ca68e2e099a51780c277ca4bfc,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-30T14:45:20Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,9bb704339eddab021e2c54e1df2aea72a8950ebb,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-30T14:45:12Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,2920f344669151ddcc7ef624d1c1ecc0ad878ba5,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-30T14:36:54Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,2b4d828943c17d66a1f04cb02b2da0930ad5192d,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-30T14:14:20Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,4926749156fbd8e1d48ec713aaf1269e84e8b6b5,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-30T14:14:08Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,e9511c315e1ea80769b734483a5e64e133c5a2ee,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-30T14:14:02Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,ec2427eb932e87ee0397d7a471997eb2fbb0b9fd,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-29T13:06:59Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeer.java,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/util/QLog.java,89cd69abb034c007a4ee8e3be7baae7f7b5de37e,,mat,matthewrollings@pm.me,2020-02-07T09:43:09Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/util/QLog.java,72bf1ce12f2408db8bef259d480335eb1ededfeb,stealthcopter,Matthew Rollings,admin@stealthcopter.com,2018-05-11T11:04:52Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/util/QLog.java,279ab654aeadad80119abf615076b22eb07f2029,stealthcopter,matthew,matthewrollings@gmail.com,2017-10-31T18:57:32Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/util/QLog.java,0f9c169454010de9080427d645f491867856e376,friederbluemle,Frieder Bluemle,frieder.bluemle@gmail.com,2017-08-19T16:20:33Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/util/QLog.java,f2ea0bd158f20de2810f98228aea6c6d061ff282,friederbluemle,Frieder Bluemle,frieder.bluemle@gmail.com,2017-05-11T16:41:00Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/util/QLog.java,55a4c8f28bf53e479a485fb9ba44279144f6526e,stealthcopter,Matthew Rollings,admin@stealthcopter.com,2017-02-15T12:53:36Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/util/QLog.java,bb880410733bca57af216d56f2e2c8aec4626907,,Mohammed Ezzat,mohamed.ezzat@devfactory.com,2016-03-15T13:13:43Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/util/QLog.java,8bbd38050b4a84ac1084f5c98197fec822c09c39,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T18:48:49Z
+rootbeerlib/src/main/java/com/scottyab/rootbeer/util/QLog.java,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+app/src/androidTest/java/com/scottyab/rootbeer/ApplicationTest.java,d1513cad35471a37772e443d732cdd71652ec2b9,danielkutik,Daniel Kutik,daniel@kutik.eu,2019-11-16T02:45:47Z
+app/src/androidTest/java/com/scottyab/rootbeer/ApplicationTest.java,94e8c24b687b69b04c1910c22aa224f8e7fd5f3d,danielkutik,Daniel Kutik,daniel@kutik.eu,2019-11-16T02:34:24Z
+app/src/androidTest/java/com/scottyab/rootbeer/ApplicationTest.java,f2ea0bd158f20de2810f98228aea6c6d061ff282,friederbluemle,Frieder Bluemle,frieder.bluemle@gmail.com,2017-05-11T16:41:00Z
+app/src/androidTest/java/com/scottyab/rootbeer/ApplicationTest.java,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+rootbeerlib/src/androidTest/java/com/scottyab/rootbeer/ApplicationTest.java,d1513cad35471a37772e443d732cdd71652ec2b9,danielkutik,Daniel Kutik,daniel@kutik.eu,2019-11-16T02:45:47Z
+rootbeerlib/src/androidTest/java/com/scottyab/rootbeer/ApplicationTest.java,94e8c24b687b69b04c1910c22aa224f8e7fd5f3d,danielkutik,Daniel Kutik,daniel@kutik.eu,2019-11-16T02:34:24Z
+rootbeerlib/src/androidTest/java/com/scottyab/rootbeer/ApplicationTest.java,f2ea0bd158f20de2810f98228aea6c6d061ff282,friederbluemle,Frieder Bluemle,frieder.bluemle@gmail.com,2017-05-11T16:41:00Z
+rootbeerlib/src/androidTest/java/com/scottyab/rootbeer/ApplicationTest.java,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+rootbeerlib/src/main/jni/toolChecker.cpp,2fae04b08146f14f688f85bbe6113ee340a3c337,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-22T13:42:21Z
+rootbeerlib/src/main/jni/toolChecker.cpp,f2ea0bd158f20de2810f98228aea6c6d061ff282,friederbluemle,Frieder Bluemle,frieder.bluemle@gmail.com,2017-05-11T16:41:00Z
+rootbeerlib/src/main/jni/toolChecker.cpp,1daad8af2f17955409291ff09bdd1c961b656f63,stealthcopter,matthew,matthewrollings@gmail.com,2017-03-13T22:55:31Z
+rootbeerlib/src/main/jni/toolChecker.cpp,206753334799b7335506ea639443f68937e434fe,stealthcopter,matthew,matthewrollings@gmail.com,2017-03-13T22:35:27Z
+rootbeerlib/src/main/jni/toolChecker.h,2fae04b08146f14f688f85bbe6113ee340a3c337,scottyab,Scott Alexander-Bown,github@alexander-bown.com,2021-05-22T13:42:21Z
+rootbeerlib/src/main/jni/toolChecker.h,f2ea0bd158f20de2810f98228aea6c6d061ff282,friederbluemle,Frieder Bluemle,frieder.bluemle@gmail.com,2017-05-11T16:41:00Z
+rootbeerlib/src/main/jni/toolChecker.h,206753334799b7335506ea639443f68937e434fe,stealthcopter,matthew,matthewrollings@gmail.com,2017-03-13T22:35:27Z
+rootbeerlib/jni/toolChecker.cpp,206753334799b7335506ea639443f68937e434fe,stealthcopter,matthew,matthewrollings@gmail.com,2017-03-13T22:35:27Z
+rootbeerlib/jni/toolChecker.cpp,43613249a26d72049d8244014e912d5d5818edaa,,aippisch,andre.ippisch@googlemail.com,2016-09-16T14:04:45Z
+rootbeerlib/jni/toolChecker.cpp,2920f344669151ddcc7ef624d1c1ecc0ad878ba5,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-30T14:36:54Z
+rootbeerlib/jni/toolChecker.cpp,e9511c315e1ea80769b734483a5e64e133c5a2ee,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-30T14:14:02Z
+rootbeerlib/jni/toolChecker.cpp,d12981d9bf2714a463e5ca1b2cf28a5920ea58ac,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-30T12:58:19Z
+rootbeerlib/jni/toolChecker.cpp,e026001047d79e95c1d2818e3ad93937ee1a982c,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-26T16:10:45Z
+rootbeerlib/jni/toolChecker.cpp,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+rootbeerlib/jni/toolChecker.h,206753334799b7335506ea639443f68937e434fe,stealthcopter,matthew,matthewrollings@gmail.com,2017-03-13T22:35:27Z
+rootbeerlib/jni/toolChecker.h,2920f344669151ddcc7ef624d1c1ecc0ad878ba5,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-30T14:36:54Z
+rootbeerlib/jni/toolChecker.h,e9511c315e1ea80769b734483a5e64e133c5a2ee,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-30T14:14:02Z
+rootbeerlib/jni/toolChecker.h,e026001047d79e95c1d2818e3ad93937ee1a982c,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-26T16:10:45Z
+rootbeerlib/jni/toolChecker.h,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+app/src/main/java/com/scottyab/rootchecker/RootCheck.java,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+app/src/main/java/com/scottyab/rootchecker/RootCheck.java,bd5268a74beb21f2a98c3f59ea717dcd35680349,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-26T14:41:45Z
+app/src/main/java/com/scottyab/rootchecker/RootCheck.java,bb1d88bbf5565c9836759be9d9b04ffe62ff4e8b,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-26T14:32:45Z
+app/src/main/java/com/scottyab/rootchecker/RootCheck.java,fdb18e5e2e15c0a7a5cb5ab6d95a569e702c3253,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-19T17:21:37Z
+app/src/main/java/com/scottyab/rootchecker/RootCheck.java,2451f96910adb976392c74b42e9fca40b842c60b,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-19T17:20:07Z
+app/src/main/java/com/scottyab/rootchecker/RootCheck.java,f1592567a2d5c8a8f1c1fe8921e23a630b7d86c6,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-19T10:09:22Z
+app/src/main/java/com/scottyab/rootchecker/RootCheck.java,08453399a94b7ba050345332190e89470162658c,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-19T09:05:10Z
+app/src/main/java/com/scottyab/rootchecker/Const.java,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+app/src/main/java/com/scottyab/rootchecker/Const.java,bb1d88bbf5565c9836759be9d9b04ffe62ff4e8b,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-26T14:32:45Z
+app/src/main/java/com/scottyab/rootchecker/MainActivity.java,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+app/src/main/java/com/scottyab/rootchecker/MainActivity.java,bb1d88bbf5565c9836759be9d9b04ffe62ff4e8b,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-26T14:32:45Z
+app/src/main/java/com/scottyab/rootchecker/MainActivity.java,f1592567a2d5c8a8f1c1fe8921e23a630b7d86c6,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-19T10:09:22Z
+app/src/main/java/com/scottyab/rootchecker/MainActivity.java,08453399a94b7ba050345332190e89470162658c,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-19T09:05:10Z
+app/jni/toolChecker.cpp,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+app/jni/toolChecker.cpp,81e37803dccfd41189847fb9c8e682031f642305,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-19T11:06:02Z
+app/jni/toolChecker.h,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+app/jni/toolChecker.h,81e37803dccfd41189847fb9c8e682031f642305,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-19T11:06:02Z
+app/src/main/java/com/scottyab/rootchecker/RootCheckNative.java,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+app/src/main/java/com/scottyab/rootchecker/RootCheckNative.java,81e37803dccfd41189847fb9c8e682031f642305,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-19T11:06:02Z
+app/src/main/java/com/scottyab/rootchecker/RootCheckNative.java,f1592567a2d5c8a8f1c1fe8921e23a630b7d86c6,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-19T10:09:22Z
+app/jni/rootChecker.cpp,81e37803dccfd41189847fb9c8e682031f642305,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-19T11:06:02Z
+app/jni/rootChecker.cpp,f1592567a2d5c8a8f1c1fe8921e23a630b7d86c6,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-19T10:09:22Z
+app/jni/rootChecker.h,81e37803dccfd41189847fb9c8e682031f642305,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-19T11:06:02Z
+app/jni/rootChecker.h,f1592567a2d5c8a8f1c1fe8921e23a630b7d86c6,stealthcopter,Matthew Rollings,matthewrollings@gmail.com,2015-06-19T10:09:22Z
+app/src/androidTest/java/com/scottyab/rootchecker/ApplicationTest.java,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+app/src/androidTest/java/com/scottyab/rootchecker/ApplicationTest.java,08453399a94b7ba050345332190e89470162658c,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-19T09:05:10Z
+app/src/main/java/com/scottyab/rootchecker/util/QLog.java,d246945d2575623ca137fcc0a4ef1eb8f3c68fab,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-26T15:50:40Z
+app/src/main/java/com/scottyab/rootchecker/util/QLog.java,08453399a94b7ba050345332190e89470162658c,scottyab,Scott Alexander-Bown,dev@scottyab.com,2015-06-19T09:05:10Z

@@ -7,6 +7,8 @@ import os
 if not os.path.exists("data"):
  os.makedirs("data")
 
+ 
+
 # GitHub Authentication function
 def github_auth(url, lsttoken, ct):
     jsonData = None
@@ -28,6 +30,10 @@ def countfiles(dictfiles, lsttokens, repo):
     ipage = 1  # url page counter
     ct = 0  # token counter
 
+    # detect languages once
+    languages = get_repo_languages(repo, lsttokens)
+    print("Detected languages:", languages)
+    
     try:
         # loop though all the commit pages until the last returned empty page
         while True:
@@ -47,17 +53,14 @@ def countfiles(dictfiles, lsttokens, repo):
                 filesjson = shaDetails['files']
                 for filenameObj in filesjson:
                     filename = filenameObj['filename']
-
-                    # check file type
-                    if SOURCE_FILES_ONLY:
-                        if filename.endswith(SOURCE_FILE_EXT):
-                            dictfiles[filename] = dictfiles.get(filename, 0) + 1
-                            print(filename)
-                        elif filename.endswith(CONFIG_FILE_EXT):
-                            print(f"Skipping configuration file: {filename}")
-                        else:
-                            print(f"Skipping unknown file type: {filename}")
-                    else:
+                    # if not is_source_file(filename, languages):
+                    #     continue
+                    # dictfiles[filename] = dictfiles.get(filename, 0) + 1
+                    # print(filename)
+                    if not filename:
+                        continue
+                    # ONLY count source files
+                    if is_source_file(filename, languages):
                         dictfiles[filename] = dictfiles.get(filename, 0) + 1
                         print(filename)
             ipage += 1
@@ -65,8 +68,43 @@ def countfiles(dictfiles, lsttokens, repo):
         print("Error receiving data")
         exit(0)
 
-# control flag
-SOURCE_FILES_ONLY = True
+
+# Retrieve the set of languages used in the given GitHub repo
+def get_repo_languages(repo, lsttokens):
+    """
+    Uses GitHub REST API to retrieve the language breakdown:
+    GET https://api.github.com/repos/{owner}/{repo}/languages
+    Returns a set of language names, e.g. {"Java", "Kotlin", "C++", "CMake"}.
+    """
+    url = f"https://api.github.com/repos/{repo}/languages"
+    data, _ = github_auth(url, lsttokens, 0)
+    if data:
+        return set(data.keys())
+    return set()
+
+
+# Map GitHub language names -> file extensions considered "source"
+LANGUAGE_EXTENSIONS = {
+    "Java": {".java"},
+    "Kotlin": {".kt", ".kts"},
+    "C": {".c", ".h"},
+    "C++": {".cpp", ".cc", ".cxx", ".hpp", ".hh", ".hxx", ".h"},
+    "CMake": {".cmake", "CMakeLists.txt"},
+}
+
+def is_source_file(filename, languages):
+    # handle special filenames
+    if filename.endswith("CMakeLists.txt") and "CMake" in languages:
+        return True
+
+    _, ext = os.path.splitext(filename.lower())
+
+    allowed_exts = set()
+    for lang in languages:
+        allowed_exts |= {e.lower() for e in LANGUAGE_EXTENSIONS.get(lang, set())
+                         if e.startswith(".")}
+
+    return ext in allowed_exts
 
 # GitHub repo
 repo = 'scottyab/rootbeer'
@@ -74,19 +112,21 @@ repo = 'scottyab/rootbeer'
 # repo = 'k9mail/k-9' # This repo is commit heavy. It takes long to finish executing
 # repo = 'mendhak/gpslogger'
 
-# differentiate between source and config files using file extensions
-CONFIG_FILE_EXT = (".xml", ".json", ".yaml", ".gradle", ".properties", ".mk", ".pro", ".iml")
-SOURCE_FILE_EXT = (".java", ".py", ".kt", ".kts", ".c", ".cpp", ".h", ".sh")
 
 # put your tokens here
 # Remember to empty the list when going to commit to GitHub.
 # Otherwise they will all be reverted and you will have to re-create them
 # I would advise to create more than one token for repos with heavy commits
-lstTokens = []
+lstTokens = ["",
+             "" ]
+
+languages = get_repo_languages(repo, lstTokens)
+print(f"Repo languages: {languages}")
 
 dictfiles = dict()
 countfiles(dictfiles, lstTokens, repo)
 print('Total number of files: ' + str(len(dictfiles)))
+
 
 file = repo.split('/')[1]
 # change this to the path of your file
