@@ -145,8 +145,32 @@ def test_delete_account(setup_account):
     assert deleted_account is None
 
 # TODO 5: Test Password Hashing
-# - Ensure that passwords are stored as **hashed values**.
-# - Verify that plaintext passwords are never stored in the database.
+# ======================================
+# Test: Password Hashing
+# Author: Zachary Sin
+# Date: 2026-02-13
+# Description: Ensure that passwords are stored as **hashed values**.
+#              Verify that plaintext passwords are never stored in the database.
+# ======================================
+def test_password_hashing(setup_account):
+
+    # set password with set_password()
+    test_password = "testpassword123!"
+    setup_account.set_password(test_password)
+
+    # check the stored password is not plaintext
+    assert setup_account.password_hash != test_password
+
+    # check the password exists and is a string
+    assert setup_account.password_hash is not None
+    assert isinstance(setup_account.password_hash, str)
+
+    # check the password was stored correctly by set_password()
+    assert setup_account.check_password(test_password) == True
+
+    # check the password is not returning true for any random string
+    wrong_test_password = "wrongtestpassword123!"
+    assert setup_account.check_password(wrong_test_password) == False
 
 # TODO 6: Test valid withdrawal
 # - Verify that withdrawing a valid amount correctly decreases the balance.
