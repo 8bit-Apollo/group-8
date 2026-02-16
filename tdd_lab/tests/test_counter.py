@@ -10,7 +10,6 @@ how to call the web service and assert what it should return.
 - The service must be able to update a counter by name.
 - The service must be able to read the counter
 """
-
 import pytest
 from src import app
 from src import status
@@ -29,6 +28,12 @@ class TestCounterEndpoints:
         result = client.post('/counters/foo')
         assert result.status_code == status.HTTP_201_CREATED
 
+    def test_get_nonexistent_counter(self, client):
+        """It should return 404 if counter does not exist"""
+
+        result = client.get('/counters/ghost')
+
+        assert result.status_code == status.HTTP_404_NOT_FOUND
     def test_unsupported_HTTP_methods(self, client):
         """Handle invalid HTTP methods"""
 
