@@ -204,9 +204,20 @@ def test_valid_withdrawal(setup_account):
     expected_amount = balance - withdraw_amount
     assert account.balance == expected_amount
 
-# TODO 7: Test Searching by Name
-# - Ensure accounts can be searched by their **name**.
-# - Verify that partial name searches return relevant accounts.
+# TODO 7: Test Withdrawal with Insufficient Funds
+# ===========================
+# Test: Withdrawal with Insufficient Funds
+# Author: Thomas Feng
+# Date: 2026-02-15
+# Description: Ensure that withdrawing more than the available balance is not allowed.
+# ===========================
+def test_withdrawal_insufficient_funds():
+    """Test withdrawing with insufficient funds"""
+    account = Account(balance=0.0)  # Set initial balance
+
+    # Attempt to withdraw more than the balance
+    with pytest.raises(DataValidationError):
+        account.withdraw(100.0)  # insufficient funds should raise an error
 
 # TODO 8: Test Bulk Insertion
 # - Create and insert multiple accounts at once.
