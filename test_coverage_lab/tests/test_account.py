@@ -6,6 +6,7 @@ from random import randrange
 import pytest
 from models import db
 from models.account import Account, DataValidationError
+from datetime import datetime
 
 ACCOUNT_DATA = {}
 
@@ -95,10 +96,57 @@ Each test should include:
 
 # Test Assignments
 
-# Student 1: Test account serialization
-# - Verify that the account object is correctly serialized to a dictionary.
-# - Ensure all expected fields are included in the output.
-# Target Method: to_dict()
+# ===========================
+# Test: Test account serialization
+# Author: Richard Sserunjogi
+# Date: 2026-02-16
+# Description:Verify that the account object is correctly serialized to a dictionary and
+#            ensure all expected fields are included in the output.
+# ===========================
+
+def test_account_serialization():
+    """
+    Test Account serialization
+    Verifies that an Account instance is correctly serialized to a dictionary and
+    that all expected fields are included in the output with correct values. Expected fields include
+    id, name, email, phone_number, disabled, date_joined, balance, role.
+    """
+    
+    date_joined=datetime.strptime("2026-02-16", "%Y-%m-%d")
+    account = Account(name="John Doe", email="johndoe@example.com", phone_number="1234567890", disabled=False,
+                      date_joined=date_joined, balance=100.0, role="user")
+    
+    assert account is not None, " should create an account instance successfully"
+
+    data = account.to_dict()
+    assert isinstance(data, dict), "to_dict() should return a dictionary"
+
+    # Verify all expected keys exist
+    expected_keys = {
+        "id",
+        "name",
+        "email",
+        "phone_number",
+        "disabled",
+        "date_joined",
+        "balance",
+        "role",
+    }
+    assert expected_keys.issubset(data.keys()), f"Missing keys in serialization: {expected_keys - set(data.keys())}"
+
+    # Verify values are correct
+    assert data["id"] == account.id
+    assert data["name"] == account.name
+    assert data["email"] == account.email
+    assert data["phone_number"] == account.phone_number
+    assert data["disabled"] == account.disabled
+    assert data["balance"] == account.balance
+    assert data["role"] == account.role
+    # date_joined should exist and be a datetime object (or None if not set)
+    assert data["date_joined"] is not None, "date_joined should be included and not None"
+    # check and be strict about type
+    assert isinstance(data["date_joined"], datetime), "date_joined should be a datetime instance"
+
 
 # Student 2: Test invalid email input
 # - Ensure invalid email formats raise a validation error.
