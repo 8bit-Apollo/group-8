@@ -237,6 +237,28 @@ def test_valid_withdrawal(setup_account):
 # TODO 10: Test Email Uniqueness Enforcement
 # - Ensure that duplicate emails are not allowed.
 # - Verify that accounts must have a unique email in the database.
+# ===========================
+# Test: Email Uniqueness Enforcement
+# Author: Jacob Armstrong
+# Date: 2026-02-16
+# Description: Ensure that no two accounts can have the same email.
+# ===========================
+def test_email_uniqueness_enforcement():
+    #create 2 accounts with the same email and see if they conflict
+
+    #create first account
+    account1 = Account(name="John", email="John@example.com", role="user")
+    db.session.add(account1)
+    db.session.commit()
+    
+    # Attempt to create second account with the same email
+    account2 = Account(name="notJohn", email="John@example.com", role="user")
+    db.session.add(account2)
+    
+    
+    with pytest.raises(Exception):
+        db.session.commit()
+
 
 # TODO 11: Test Role-Based Access
 # - Ensure users with different roles ('admin', 'user', 'guest') have appropriate permissions.
