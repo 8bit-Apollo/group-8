@@ -164,8 +164,15 @@ class TestCounterEndpoints:
 
         assert response.status_code == HTTPStatus.OK
         assert response.get_json() == {"test1": 5}
-
         # TODO: Add an assertion to check setting to the same value does not change it again
+        response2 = client.put('/counters/test1/set/5')
+        assert response2.status_code == HTTPStatus.OK
+
+        #make sure value is the same
+        current_value = client.get('/counters/test1')
+        assert current_value.status_code == HTTPStatus.OK
+        assert current_value.get_json() == {"test1": 5}
+
 
     # ===========================
     # Test: Prevent negative counter values
