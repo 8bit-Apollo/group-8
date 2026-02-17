@@ -48,3 +48,7 @@ def delete_counter(name):
 
     del COUNTERS[name]
     return jsonify({name: "deleted"}), status.HTTP_204_NO_CONTENT
+
+@app.route('/counters', methods=['GET'])
+def list_counters():
+    return jsonify(COUNTERS), status.HTTP_200_OK
