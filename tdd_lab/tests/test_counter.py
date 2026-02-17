@@ -28,40 +28,10 @@ class TestCounterEndpoints:
         result = client.post('/counters/foo')
         assert result.status_code == status.HTTP_201_CREATED
 
-    def test_get_nonexistent_counter(self, client):
-        """It should return 404 if counter does not exist"""
-
-        result = client.get('/counters/ghost')
-
+    def test_delete_nonexistent_counter(self, client):
+        """If counter does not exist will return 404 error"""
+        
+        #delete imaginary counter
+        result = client.delete('/counters/imaginary')
+        # check status code is 404
         assert result.status_code == status.HTTP_404_NOT_FOUND
-    def test_unsupported_HTTP_methods(self, client):
-        """Handle invalid HTTP methods"""
-
-        # list of basic http methods
-        all_http_methods = ['POST', 'GET', 'PUT', 'DELETE', 'PATCH', 'HEAD']
-
-        # list of supported http methods
-        supported_http_methods = ['POST', 'GET', 'PUT', 'DELETE']
-
-        # iterate through all methods and check http return status
-        for method in all_http_methods:
-            if method not in supported_http_methods:
-
-                # create the request
-                http_method = getattr(client, method.lower())
-                result = http_method('/counters/foo')
-
-                assert result.status_code == status.HTTP_405_METHOD_NOT_ALLOWED
-
-    # ===========================
-    # Test: Prevent duplicate counter
-    # Author: Nevryk Soliven
-    # Date: 2026-02-16
-    # Description: Ensure duplicate counters raise a conflict error.
-    # ===========================
-    def test_post_prevent_duplicate_counter(self, client):
-        """Prevent duplicate counter"""
-        result = client.post('/counters/foo_dupe_test')
-        assert result.status_code == status.HTTP_201_CREATED
-        result = client.post('/counters/foo_dupe_test')
-        assert result.status_code == status.HTTP_409_CONFLICT

@@ -8,31 +8,33 @@ app = Flask(__name__)
 
 COUNTERS = {}
 
-def counter_exists(name):
-  """Check if counter exists"""
-  return name in COUNTERS
-
-def get_counter_value(name):
-    """Return counter value"""
-    return COUNTERS.get(name)
-
 @app.route('/counters/<name>', methods=['POST'])
 def create_counter(name):
     """Create a counter"""
     if counter_exists(name):
-        return jsonify({"error": f"Counter {name} already exists"}), status.HTTP_409_CONFLICT
+        return error_response(
+            f"Counter {name} already exists",
+            status.HTTP_409_CONFLICT
+        ) 
+    
     COUNTERS[name] = 0
     return jsonify({name: COUNTERS[name]}), status.HTTP_201_CREATED
 
-@app.route('/counters/<name>', methods=['GET'])
-def get_counter(name):
-    """Retrieve a counter"""
+@app.route('/counters/<name>', methods=['DELETE'])
+def delete_counter(name):
+    """Delete a counter"""
+    if not counter_exists(name):
+        return error_response(
+            f"Counter {name} does not exist",
+            status.HTTP_404_NOT_FOUND
+        )
+    
+    del COUNTERS[name]
+    return '', status.HTTP_204_NO_CONTENT
 
-    value = get_counter_value(name)
+def counter_exists(name):
+    """Check if a counter exists"""
+    return name in COUNTERS
 
-    if value is None:
-        return jsonify(
-            {"error": f"Counter {name} not found"}
-        ), status.HTTP_404_NOT_FOUND
-
-    return jsonify({name: value}), status.HTTP_200_OK
+def error_response(message, code):
+    return jsonify({"error": message}), code
