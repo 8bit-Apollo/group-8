@@ -93,50 +93,184 @@ Each test should include:
 - A meaningful **commit message** when submitting their PR.
 """
 
-# Test Assignments
+# TODO 1: Test Default Values
+# - Ensure that new accounts have the correct default values (e.g., `disabled=False`).
+# - Check if an account has no assigned role, it defaults to "user".
 
-# Student 1: Test account serialization
-# - Verify that the account object is correctly serialized to a dictionary.
-# - Ensure all expected fields are included in the output.
-# Target Method: to_dict()
+# TODO 2: Test Updating Account Email
+# - Ensure an account’s email can be successfully updated.
+# - Verify that the updated email is stored in the database.
 
-# Student 2: Test invalid email input
-# - Ensure invalid email formats raise a validation error.
-# Target Method: validate_email()
 
-# Student 3: Test missing required fields
-# - Ensure account initialization fails when required fields are missing.
-# Target Method: Account() initialization
+# ===========================
+# Test: Missing Required Fields
+# Author: Nevryk Soliven
+# Date: 2026-02-16
+# Description: Ensure Account creation fails when required fields are missing.
+# ===========================
 
-# Student 4: Test positive deposit
-# - Verify that depositing a positive amount correctly increases the balance.
-# Target Method: deposit()
+def test_missing_required_fields():
+    """Test that creating an account without required fields raises an error"""
+    from sqlalchemy.exc import IntegrityError
 
-# Student 5: Test deposit with zero/negative values
-# - Ensure zero or negative deposits are rejected.
-# Target Method: deposit()
+    # Try creating account without name and email
+    account = Account()
+    db.session.add(account)
 
-# Student 6: Test valid withdrawal
+    with pytest.raises(IntegrityError):
+        db.session.commit()
+
+    db.session.rollback()
+
+# ===========================
+# Test: Invalid Email Input
+# Author: Angel V
+# Date: 2026-02-03
+# Description: Ensure invalid email formats are rejected.
+# ===========================
+# TODO 4: Test Invalid Email Handling
+# - Check that invalid emails (e.g., "not-an-email") raise a validation error.
+# - Ensure accounts without an email cannot be created.
+def test_invalid_email_input():
+    invalid_emails = [
+        'plainaddress',
+        'missingatsign.com',
+        'missingdomain@',
+        '@missingusername.com',
+        'user@domain'
+    ]
+
+    for email in invalid_emails:
+        account = Account(name='Test User', email=email, role='user')
+        with pytest.raises(DataValidationError):
+            account.validate_email()
+            
+# TODO Test deleting an account
+# ===========================
+# Test: Delete Account
+# Author: Angel V
+# Date: 2026-02-08
+# Description: Ensure an account can be deleted from the database.
+# ===========================
+
+def test_delete_account(setup_account):
+    account = setup_account
+    account_id = account.id
+
+    account.delete()                        # deleting the account
+    deleted_account = Account.query.get(account_id)
+    assert deleted_account is None
+
+# TODO 5: Test Password Hashing
+# ======================================
+# Test: Password Hashing
+# Author: Zachary Sin
+# Date: 2026-02-13
+# Description: Ensure that passwords are stored as **hashed values**.
+#              Verify that plaintext passwords are never stored in the database.
+# ======================================
+def test_password_hashing(setup_account):
+
+    # set password with set_password()
+    test_password = "testpassword123!"
+    setup_account.set_password(test_password)
+
+    # check the stored password is not plaintext
+    assert setup_account.password_hash != test_password
+
+    # check the password exists and is a string
+    assert setup_account.password_hash is not None
+    assert isinstance(setup_account.password_hash, str)
+
+    # check the password was stored correctly by set_password()
+    assert setup_account.check_password(test_password) == True
+
+    # check the password is not returning true for any random string
+    wrong_test_password = "wrongtestpassword123!"
+    assert setup_account.check_password(wrong_test_password) == False
+
+# TODO 6: Test valid withdrawal
 # - Verify that withdrawing a valid amount correctly decreases the balance.
-# Target Method: withdraw()
+# ===========================
+# Test: Valid Withdrawal
+# Author: Connor Palmira
+# Date: 2026-02-10
+# Description: Ensure that withdrawals of positive values reduce the balance amount correctly
+# ===========================
+def test_valid_withdrawal(setup_account):
+    """Test successful withdrawal of positive values from account is correct"""
 
-# Student 7: Test withdrawal with insufficient funds
-# - Ensure withdrawal fails when balance is insufficient.
-# Target Method: withdraw()
+    account = setup_account
 
-# Student 8: Test password hashing
-# - Ensure passwords are properly hashed.
-# - Verify that password verification works correctly.
-# Target Methods: set_password() / check_password()
+    with pytest.raises(DataValidationError):
+        account.withdraw(0)
+    with pytest.raises(DataValidationError):
+        account.withdraw(-50)
 
-# Student 9: Test account deactivation/reactivation
-# - Ensure accounts can be deactivated and reactivated correctly.
-# Target Methods: deactivate() / reactivate()
+    account.deposit(100)
+    db.session.commit()
 
-# Student 10: Test email uniqueness enforcement
-# - Ensure duplicate emails are not allowed.
-# Target Method: validate_unique_email()
+    balance = account.balance
+    withdraw_amount = 65
 
-# Student 11: Test deleting an account
-# - Verify that an account can be successfully deleted from the database.
-# Target Method: delete()
+    assert withdraw_amount > 0
+
+    account.withdraw(withdraw_amount)
+    db.session.commit()
+
+    expected_amount = balance - withdraw_amount
+    assert account.balance == expected_amount
+
+# TODO 7: Test Withdrawal with Insufficient Funds
+# ===========================
+# Test: Withdrawal with Insufficient Funds
+# Author: Thomas Feng
+# Date: 2026-02-15
+# Description: Ensure that withdrawing more than the available balance is not allowed.
+# ===========================
+def test_withdrawal_insufficient_funds():
+    """Test withdrawing with insufficient funds"""
+    account = Account(balance=0.0)  # Set initial balance
+
+    # Attempt to withdraw more than the balance
+    with pytest.raises(DataValidationError):
+        account.withdraw(100.0)  # insufficient funds should raise an error
+
+# TODO 8: Test Bulk Insertion
+# - Create and insert multiple accounts at once.
+# - Verify that all accounts are successfully stored in the database.
+
+# TODO 9: Test Account Deactivation/Reactivate
+# - Ensure accounts can be deactivated.
+# - Verify that deactivated accounts cannot perform certain actions.
+# - Ensure reactivation correctly restores the account.
+
+# TODO 10: Test Email Uniqueness Enforcement
+# - Ensure that duplicate emails are not allowed.
+# - Verify that accounts must have a unique email in the database.
+# ===========================
+# Test: Email Uniqueness Enforcement
+# Author: Jacob Armstrong
+# Date: 2026-02-16
+# Description: Ensure that no two accounts can have the same email.
+# ===========================
+def test_email_uniqueness_enforcement():
+    #create 2 accounts with the same email and see if they conflict
+
+    #create first account
+    account1 = Account(name="John", email="John@example.com", role="user")
+    db.session.add(account1)
+    db.session.commit()
+    
+    # Attempt to create second account with the same email
+    account2 = Account(name="notJohn", email="John@example.com", role="user")
+    db.session.add(account2)
+    
+    
+    with pytest.raises(Exception):
+        db.session.commit()
+
+
+# TODO 11: Test Role-Based Access
+# - Ensure users with different roles ('admin', 'user', 'guest') have appropriate permissions.
+# - Verify that role changes are correctly reflected in the database.

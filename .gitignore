@@ -1,0 +1,16 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Test artifacts
+.coverage
+.pytest_cache/
+
+# Database files
+*.db
+
+# Virtual environment
+venv/
+
+# macOS system files
+.DS_Store
