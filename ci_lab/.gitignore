@@ -35,6 +35,7 @@ package-lock.json
 .coverage.*
 htmlcov/
 coverage.xml
+tdd_lab/.coverage
 
 # Ignore pytest cache
 .cache/
