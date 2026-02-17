@@ -3,8 +3,6 @@
 ## 📌 Overview
 This lab focuses on **Test-Driven Development (TDD)**—writing test cases first and then implementing the required functionality. Each student will contribute **one test case** and submit a pull request.
 
-📖 **Instructions**: Follow the guidelines provided on the [class website](https://johnxu21.github.io/teaching/CS472/Timetable/dynamic_analysis/?).
-
 ---
 
 ## 📂 Project Structure
@@ -24,8 +22,11 @@ tdd_lab/
 ├── 📄 README.md                 # Project documentation
 ```
 
-### Python Version (s)
-To be able to following the lab, you need at least python `>= 3.8`. The exercise has been testing with the following Python versions: `3.8.1`, `3.9.5`, `3.9.6`, `3.9.7` and `3.10.10` but any version of python `3.8+` work without any configuration issues. **If you are facing any configuration issues, please reach out to the T.A**. 
+### Python Version(s)
+To follow this lab, you need Python **version 3.8 or later**. The exercises have been tested with the following versions: `3.8.1`, `3.9.5`, `3.9.6`, `3.9.7`, and `3.10.10`. However, any Python version **3.8+** should work without configuration issues.  
+
+If you encounter any setup or configuration problems, please reach out to the **T.A.** for assistance.
+
 
 ### 1. Upgrading PIP:
 Sometimes it is useful to upgrade `pip` before installing dependencies. If you like, run: `pip install --upgrade pip` and later install the dependencies using: `pip install -r requirements.txt`
