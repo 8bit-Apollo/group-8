@@ -81,3 +81,23 @@ class TestCounterEndpoints:
         assert result.status_code == status.HTTP_201_CREATED
         result = client.post('/counters/foo_dupe_test')
         assert result.status_code == status.HTTP_409_CONFLICT
+        
+    # ===========================
+    # Test: List all counters
+    # Author: Matthew Jackson
+    # Date: 2026-02-16
+    # Description: List and Check all the counter available.
+    # ===========================
+    def test_List_All_Counters(self, client):
+        # create counters to get
+        client.post('/counters/foo')
+        client.post('/counters/bar')
+        
+        result = client.get('/counters') #test retrieving counters
+        
+        assert result.status_code == status.HTTP_200_OK
+        data = result.get_json()
+        #list and check counters
+        assert 'foo' in data
+        assert 'bar' in data
+        assert len(data) == 3
