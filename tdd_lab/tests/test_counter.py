@@ -52,6 +52,24 @@ class TestCounterEndpoints:
                 result = http_method('/counters/foo')
 
                 assert result.status_code == status.HTTP_405_METHOD_NOT_ALLOWED
+<<<<<<< add-test-delete-counter-test
+    # ===========================
+    # Test: Delete a counter
+    # Author: Thomas Feng
+    # Date: 2026-02-16
+    # Description: Ensure that a counter can be deleted and will no longer exist after deletion.
+    # ===========================
+    def test_delete_counter(self, client):
+        """It should delete a counter"""
+
+        # create a counter to delete
+        result = client.post('/counters/delete-test')
+        assert result.status_code == status.HTTP_201_CREATED
+
+        # delete the counter
+        result = client.delete('/counters/delete-test')
+        assert result.status_code == status.HTTP_204_NO_CONTENT
+=======
 
     # ===========================
     # Test: Prevent duplicate counter
@@ -65,3 +83,4 @@ class TestCounterEndpoints:
         assert result.status_code == status.HTTP_201_CREATED
         result = client.post('/counters/foo_dupe_test')
         assert result.status_code == status.HTTP_409_CONFLICT
+>>>>>>> main

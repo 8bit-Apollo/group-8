@@ -36,3 +36,15 @@ def get_counter(name):
         ), status.HTTP_404_NOT_FOUND
 
     return jsonify({name: value}), status.HTTP_200_OK
+
+@app.route('/counters/<name>', methods=['DELETE'])
+def delete_counter(name):
+    """Delete a counter"""
+    
+    if not counter_exists(name):
+        return jsonify(
+            {"error": f"Counter {name} not found"}
+        ), status.HTTP_404_NOT_FOUND
+
+    del COUNTERS[name]
+    return jsonify({name: "deleted"}), status.HTTP_204_NO_CONTENT
